@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_container {
+    position: relative;
+}
+.table {
+    margin: 50px auto;
+    width: 600px;
+    height: 600px;
+    background: #aaa;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+.row {
+    margin: 4px 2px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.cell {
+    padding: 5px;
+    margin: 2px 4px;
+    background: #eee;
+    text-align: center;
+    color: #000;
+    font-size: 4.3rem;
+}
+.wrong {
+    background: #555;
+}
+.good {
+    background: #f9df76;
+}
+.perfect {
+    background: #daf7a6;
+}
+.result_box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    padding: 20px 10px;
+    border: 4px solid #999;
+    background: #fff;
+    top: 150px;
+    left: calc(50% - 150px);
+    text-align: center;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+button.reset {
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: #ccc;
+    font-size: 1.2rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    cursor: pointer;
+}
+.emoji_container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 10px;
+}
+.eye#left {
+    left: 20px;
+}
+.eye#right {
+    right: 20px;
+}
+#mouth {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    border-radius: 70%;
+    left: 25px;
+}
