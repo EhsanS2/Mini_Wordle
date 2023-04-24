@@ -111,7 +111,7 @@ function compare(pzl, wrd) {
         let flag = 0;
         // user word iteration
         for (let j = 0; j < 5; j++) {
-            console.log(wrd);
+            //console.log(wrd);
             //checking if i(th) letter is in puzzle word
             if (wrd[i] === pzl[j]) {
                 flag = 1;
