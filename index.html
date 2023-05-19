@@ -10,6 +10,25 @@
         <title>Mini Wordle :) - Made With ♥</title>
     </head>
     <body>
+        <div id="guide" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p>
+                    In this game you guess a 5-letter word<br />
+                    you only need to type your guess and table will guide you
+                    with colors.<br /><br />
+                    <span class="perfect" style="padding: 4px">GREEN</span>
+                    : RIGHT LETTER AND RIGHT POSITION,<br />
+                    <span class="good" style="padding: 4px">YELLOW</span> :
+                    RIGHT LETTER IN WRONG POSITION,<br />
+                    <span class="wrong" style="color: #fff; padding: 4px"
+                        >GRAY</span
+                    >
+                    : WRONG LETTER<br /><br />
+                    Good Luck
+                </p>
+            </div>
+        </div>
         <div class="main_container">
             <div class="table">
                 <div class="row" id="r1">
