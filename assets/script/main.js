@@ -7,6 +7,7 @@ const gray = "#949494";
 const yellow = "#ebd705";
 const green = "#188535";
 const red = "#f00c17";
+const modal = document.getElementById("guide");
 
 String.prototype.replaceAt = function (index, char) {
     if (index >= this.length) {
@@ -190,4 +191,8 @@ function finish(bool) {
     });
     result_text.style.color = color;
     result_box.style.display = "flex";
+}
+
+function closeModal() {
+    modal.style.display = "none";
 }
